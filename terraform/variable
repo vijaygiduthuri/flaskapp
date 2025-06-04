@@ -1,24 +1,23 @@
-variable "container_image" {
-  description = "The container image to deploy."
-  default     = "us-central1-docker.pkg.dev/argon-zoo-454615-t9/docker-repo/flaskapp:latest"
-}
-
-
 variable "project_id" {
   description = "The ID of the GCP project."
   type        = string
-  default     = "argon-zoo-454615-t9"
 }
 
 variable "region" {
   description = "The region to deploy the Cloud Run service."
-  default     = "us-central1"
+  type        = string
 }
 
 variable "service_name" {
   description = "The name of the Cloud Run service."
-  default     = "my-cloud-run-service"
+  type        = string
 }
+
+variable "container_image" {
+  description = "The container image to deploy."
+  type        = string
+}
+
 
 
 
