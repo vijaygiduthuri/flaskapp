@@ -1,9 +1,10 @@
 terraform {
-  backend "gcs" 
+  backend "gcs" {
     bucket = "test-terraform001-bucket"
     prefix = "terraform/state"
   }
 }
+
 
 
 resource "google_cloud_run_service" "default" {
