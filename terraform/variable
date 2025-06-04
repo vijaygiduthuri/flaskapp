@@ -1,23 +1,20 @@
 variable "project_id" {
-  description = "The ID of the GCP project."
+  description = "The GCP project ID"
   type        = string
 }
 
 variable "region" {
-  description = "The region to deploy the Cloud Run service."
+  description = "The GCP region"
   type        = string
+  default     = "us-central1"
 }
 
 variable "service_name" {
-  description = "The name of the Cloud Run service."
+  description = "Name of the Cloud Run service"
   type        = string
 }
 
 variable "container_image" {
-  description = "The container image to deploy."
+  description = "Docker image URI"
   type        = string
 }
-
-
-
-
